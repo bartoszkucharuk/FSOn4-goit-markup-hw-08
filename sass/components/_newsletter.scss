@@ -1,0 +1,75 @@
+.newsletter {
+  &__wrapper {
+    display: flex;
+    justify-content: flex-end;
+    margin-left: auto;
+    margin-right: 212px;
+  }
+
+  &__text {
+    position: relative;
+    margin-top: 12px;
+    margin-bottom: 20px;
+    display: flex;
+    font-family: var(--main-font);
+    text-align: left;
+    font-size: var(--font-size-14);
+    font-weight: var(--font-weight-700);
+    text-transform: uppercase;
+    line-height: var(--line-height-1_172);
+    letter-spacing: var(--letter-spacing-003em);
+    color: var(--ideal-white-color);
+  }
+  &__form {
+    position: relative;
+    display: flex;
+    width: 363px;
+    height: 50px;
+  }
+
+  &__input {
+    display: flex;
+    align-items: center;
+    font-size: var(--font-size-16);
+    line-height: var(--line-height-1_250);
+    letter-spacing: var(--letter-spacing-003em);
+    color: rgba(255, 255, 255, 0.6);
+    background-color: var(--transparent-color);
+    padding-left: 16px;
+    width: 358px;
+    height: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-sizing: border-box;
+  }
+
+  &__btn {
+    position: absolute;
+    display: block;
+    top: 48px;
+    left: 370px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding-left: 42px;
+    padding-right: 24px;
+    width: 200px;
+    height: 50px;
+    color: var(--ideal-white-color);
+    font-weight: var(--font-weight-700);
+    font-size: var(--font-size-16);
+    line-height: var(--line-height-1_875);
+    letter-spacing: var(--letter-spacing-006em);
+    background-color: var(--secondary-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: var(--border-radius-4);
+  }
+
+  &__icon {
+    display: block;
+    margin-left: 20px;
+    margin-right: 13px;
+    width: 24px;
+    height: 24px;
+    fill: var(--ideal-white-color);
+  }
+}

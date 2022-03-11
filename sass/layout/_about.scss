@@ -1,0 +1,47 @@
+.about {
+  &__list {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 94px;
+  }
+
+  &__item {
+    width: 270px;
+    height: 251px;
+    margin-right: 15px;
+    margin-left: 15px;
+  }
+
+  &__item h3 {
+    height: 16px;
+    font-size: var(--font-size-14);
+    line-height: var(--line-height-1_172);
+    font-weight: var(--font-weight-700);
+    letter-spacing: var(--letter-spacing-003em);
+    padding-bottom: 10px;
+  }
+
+  &__item p {
+    height: 75px;
+    color: var(--main-color);
+    font-size: var(--font-size-14);
+    line-height: var(--line-height-1_174);
+    letter-spacing: var(--letter-spacing-003em);
+  }
+
+  &__stample {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 270px;
+    height: 120px;
+    margin-bottom: 30px;
+    background-color: var(--almost-white-color);
+    border-radius: var(--border-radius-4);
+  }
+  &__icon {
+    max-width: 70px;
+    max-height: 70px;
+    fill: cover;
+  }
+}

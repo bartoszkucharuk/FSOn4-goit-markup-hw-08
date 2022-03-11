@@ -1,0 +1,46 @@
+.contact {
+  &__list {
+    display: flex;
+  }
+
+  &__tel,
+  &__mail {
+    font-size: var(--font-size-14);
+    line-height: var(--line-height-1_143);
+    letter-spacing: var(--letter-spacing-002em);
+    padding: 1, 0;
+    color: var(--main-color);
+    &:hover,
+    &:focus {
+      color: var(--secondary-color);
+      transition: var(--transition-cubic-bezier-250ms);
+    }
+  }
+
+  &__mail {
+    margin-left: 10px;
+  }
+
+  &__tel {
+    margin-right: 27px;
+    margin-left: 50px;
+  }
+
+  &__mail-icon,
+  &__tel-icon {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    fill: var(--current-color);
+  }
+
+  &__mail-icon {
+    width: 16px;
+    height: 12px;
+  }
+  &__tel-icon {
+    width: 10px;
+    height: 16px;
+  }
+}

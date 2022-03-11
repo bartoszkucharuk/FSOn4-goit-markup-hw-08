@@ -1,0 +1,19 @@
+.logo {
+  margin: 24px 93px 24px 15px;
+
+  &__link {
+    font-family: var(--secondary-font);
+    color: var(--font-black-color);
+    font-weight: var(--font-weight-700);
+    font-size: var(--font-size-26);
+    line-height: var(--line-height-1_192);
+    letter-spacing: var(--letter-spacing-003em);
+    &_footer {
+      color: var(--ideal-white-color);
+    }
+  }
+
+  &__accent {
+    color: var(--secondary-color);
+  }
+}
