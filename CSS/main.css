@@ -795,9 +795,14 @@ img {
   color: var(--placeholder-color);
 }
 
+.form .form__input:focus + .form__icon {
+  fill: var(--secondary-color);
+}
+
 .form__input, .form__textarea {
   box-sizing: border-box;
   border-radius: var(--border-radius-4);
+  outline: none;
 }
 
 .form__input:active, .form__input:hover, .form__input:focus, .form__input:focus-within, .form__textarea:active, .form__textarea:hover, .form__textarea:focus, .form__textarea:focus-within {

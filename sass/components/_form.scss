@@ -69,10 +69,15 @@
     }
   }
 
+  .form__input:focus + .form__icon {
+    fill: var(--secondary-color);
+  }
+
   &__input,
   &__textarea {
     box-sizing: border-box;
     border-radius: var(--border-radius-4);
+    outline: none;
     &:active,
     &:hover,
     &:focus,
