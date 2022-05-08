@@ -3,15 +3,14 @@
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url("../images/hero-bg-mobile.jpg");
+    url("../images/hero_bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-size: 480px 400px;
   display: flex;
   justify-content: center;
   background-color: var(--footer-dark-color);
   margin-bottom: 94px;
-  width: 1600px;
+  width: 100vw;
   margin: 0 auto 94px auto;
 
   &__banner {
