@@ -111,25 +111,29 @@ img {
 }
 
 .container {
-  width: 1200px;
-  align-items: center;
-  margin: 0 auto;
-}
-
-.header .container {
-  display: flex;
-  align-items: center;
-}
-
-.our-team .container {
-  background-color: #f5f4fa;
   width: 100%;
+  padding: 0 15px;
 }
 
-.clients .container {
-  margin-bottom: 94px;
-  display: flex;
-  justify-content: center;
+@media screen and (min-width: 480px) {
+  .container {
+    max-width: 480px;
+    padding: 0 15px;
+    margin: 15 auto;
+  }
+  .header .container {
+    display: flex;
+    align-items: center;
+  }
+  .our-team .container {
+    background-color: #f5f4fa;
+    width: 100%;
+  }
+  .clients .container {
+    margin-bottom: 94px;
+    display: flex;
+    justify-content: center;
+  }
 }
 
 .header {
@@ -143,9 +147,10 @@ img {
 }
 
 .hero {
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero_bg.jpg");
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero-bg-mobile.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  background-size: 480px 400px;
   display: flex;
   justify-content: center;
   background-color: var(--footer-dark-color);

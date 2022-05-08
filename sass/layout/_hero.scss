@@ -3,9 +3,10 @@
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url("../images/hero_bg.jpg");
+    url("../images/hero-bg-mobile.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  background-size: 480px 400px;
   display: flex;
   justify-content: center;
   background-color: var(--footer-dark-color);
