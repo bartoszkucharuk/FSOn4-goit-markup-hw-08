@@ -110,6 +110,75 @@ img {
   display: flex;
 }
 
+.container {
+  width: 100%;
+  margin: 0 15px;
+  border: 1px solid red;
+}
+
+@media screen and (min-width: 480px) {
+  .container {
+    max-width: 480px;
+    padding: 0 15px;
+    margin: 0 auto;
+  }
+  .header .container {
+    display: flex;
+    align-items: center;
+  }
+  .our-team .container {
+    background-color: #f5f4fa;
+    width: 100%;
+  }
+  .clients .container {
+    margin-bottom: 94px;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+    padding: 0 15px;
+    margin: 0 auto;
+  }
+  .header .container {
+    display: flex;
+    align-items: center;
+  }
+  .our-team .container {
+    background-color: #f5f4fa;
+    width: 100%;
+  }
+  .clients .container {
+    margin-bottom: 94px;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+    padding: 0 15px;
+    margin: 0 auto;
+  }
+  .header .container {
+    display: flex;
+    align-items: center;
+  }
+  .our-team .container {
+    background-color: #f5f4fa;
+    width: 100%;
+  }
+  .clients .container {
+    margin-bottom: 94px;
+    display: flex;
+    justify-content: center;
+  }
+}
+
 .header {
   height: 80px;
   align-items: center;
@@ -118,6 +187,45 @@ img {
 
 .header .contact {
   margin-left: auto;
+}
+
+.hero {
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero_bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  background-color: var(--footer-dark-color);
+  margin-bottom: 94px;
+  width: 100vw;
+  margin: 0 auto 94px auto;
+}
+
+.hero__banner {
+  display: block;
+  align-items: center;
+  color: var(--ideal-white-color);
+  height: 100px;
+  width: 696px;
+  display: block;
+  justify-content: center;
+  align-items: center;
+  padding-top: 200px;
+  padding-bottom: 400px;
+}
+
+.hero__header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 120px;
+  color: var(--ideal-white-color);
+  font-size: var(--font-size-44);
+  font-weight: var(--font-weight-900);
+  line-height: var(--line-height-1_367);
+  letter-spacing: var(--letter-spacing-006em);
+  text-align: center;
+  margin-bottom: 30px;
 }
 
 .about__list {
