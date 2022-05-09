@@ -1,64 +1,203 @@
 .hero {
-  background-image: linear-gradient(
+  margin: auto;
+}
+
+
+@media screen and (min-width: 320px) and (max-width: 767px){
+  .hero {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url("../images/hero-bg-mobile.jpg");
+      background-repeat: no-repeat;
+      background-position: center top;
+      background-size: 480px 400px;
+      max-width: 480px;
+      display: block;
+      padding-top: 118px;
+
+
+      
+    &__header {
+        display: flex;
+        justify-content: center;
+        margin: auto;
+        margin-bottom: 30px;
+        max-width: 365px; 
+        font-family: var(--main-font);
+        color: var(--ideal-white-color);
+        font-size: var(--font-size-26);
+        font-weight: var(--font-weight-900);
+        line-height: var(--line-height-1_615);
+        letter-spacing: var(--letter-spacing-006em);
+        text-align: center;
+
+      }
+
+      &__btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: var(--ideal-white-color);
+        margin: auto;
+        margin-bottom: 118px;
+        padding: 10 41 10 42;
+        width: 200px;
+        height: 50px;
+        background: var(--secondary-color);
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        border-radius: var(--border-radius-4);
+      }
+  }
+}
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 320px) and (max-width: 767px),
+screen and (min-resolition: 192dpi) and (min-width: 320px) and (max-width: 767px),
+screen and (min-resolition: 2dppx) and (min-width: 320px) and (max-width: 767px) {
+  .hero {
+    background-image: linear-gradient(
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
-    ),
-    url("../images/hero_bg.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  display: flex;
-  justify-content: center;
-  background-color: var(--footer-dark-color);
-  margin-bottom: 94px;
-  width: 100vw;
-  margin: 0 auto 94px auto;
-  // border: 10px dashed blue;
-
-  &__banner {
-    display: block;
-    align-items: center;
-    color: var(--ideal-white-color);
-    height: 100px;
-    width: 696px;
-    display: block;
-    justify-content: center;
-    align-items: center;
-    padding-top: 200px;
-    padding-bottom: 400px;
-    // border: 5px dashed yellow;
-  }
-
-  &__header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 120px;
-    color: var(--ideal-white-color);
-    font-size: var(--font-size-44);
-    font-weight: var(--font-weight-900);
-    line-height: var(--line-height-1_367);
-    letter-spacing: var(--letter-spacing-006em);
-    text-align: center;
-    margin-bottom: 30px;
+      ),
+      url("../images/hero-bg-mobile@2x.jpg");
+      
   }
 }
 
-//   &__btn {
-//     display: flex;
-//     justify-content: center;
-//     align-items: center;
-//     color: var(--ideal-white-color);
- 
-//     margin-left: auto;
-//     margin-right: auto;
-//     padding: 10 41 10 42;
-//     width: 200px;
-//     height: 50px;
-//     background: var(--secondary-color);
-//     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-//     border-radius: var(--border-radius-4);
-//   }
-// }
+//  __________---------- tablet ----------__________
+
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 768px) and (max-width: 1199px),
+screen and (min-resolition: 192dpi) and (min-width: 768px) and (max-width: 1199px),
+screen and (min-resolition: 2dppx) and (min-width: 768px) and (max-width: 1199px) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)),
+      url("../images/hero-bg-tablet@2x.jpg");
+
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)),
+      url("../images/hero-bg-tablet.jpg");
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: 768px 400px;
+    max-width: 768px;
+    display: block;
+    padding-top: 118px;
+
+    &__header {
+      display: flex;
+      justify-content: center;
+      margin: auto;
+      margin-bottom: 30px;
+      max-width: 365px;
+      font-family: var(--main-font);
+      color: var(--ideal-white-color);
+      font-size: var(--font-size-26);
+      font-weight: var(--font-weight-900);
+      line-height: var(--line-height-1_615);
+      letter-spacing: var(--letter-spacing-006em);
+      text-align: center;
+
+    }
+
+    &__btn {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: var(--ideal-white-color);
+      margin: auto;
+      margin-bottom: 118px;
+      padding: 10 41 10 42;
+      width: 200px;
+      height: 50px;
+      background: var(--secondary-color);
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+      border-radius: var(--border-radius-4);
+    }
+  }
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 768px) and (max-width: 1199px),
+screen and (min-resolition: 192dpi) and (min-width: 768px) and (max-width: 1199px),
+screen and (min-resolition: 2dppx) and (min-width: 768px) and (max-width: 1199px) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)),
+      url("../images/hero-bg-tablet@2x.jpg");
+
+  }
+}
+
+//  __________---------- desktop ----------__________
+
+@media screen and (min-width: 1200px) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)),
+      url("../images/hero-bg-desktop.jpg");
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: 1600px 600px;
+    max-width: 1600px;
+    display: block;
+    padding-top: 200px;
+
+    &__header {
+      display: flex;
+      justify-content: center;
+      margin: auto;
+      margin-bottom: 30px;
+      max-width: 650px;
+      max-height: 120px;
+      font-family: var(--main-font);
+      color: var(--ideal-white-color);
+      font-size: var(--font-size-44);
+      font-weight: var(--font-weight-900);
+      line-height: var(--line-height-1_367);
+      letter-spacing: var(--letter-spacing-006em);
+      text-align: center;
+
+    }
+
+    &__btn {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: var(--ideal-white-color);
+      margin: auto;
+      margin-bottom: 200px;
+      padding: 10 41 10 42;
+      width: 200px;
+      height: 50px;
+      background: var(--secondary-color);
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+      border-radius: var(--border-radius-4);
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 // _____________________________________________________
 
@@ -68,40 +207,29 @@
 //       rgba(47, 48, 58, 0.4),
 //       rgba(47, 48, 58, 0.4)
 //     ),
-//     url("../images/hero_bg.jpg");
+//     url("../images/hero-bg-desktop.jpg");
 //   background-repeat: no-repeat;
-//   background-size: cover;
-//   display: flex;
 //   justify-content: center;
-//   background-color: var(--footer-dark-color);
-//   margin-bottom: 94px;
-//   width: 100vw;
-//   margin: 0 auto 94px auto;
+//   background-size: 1600px 600px;
+//   display: block;
 
-//   &__banner {
-//     display: block;
-//     align-items: center;
-//     color: transparent;
-//     height: 200px;
-//     width: 696px;
-//     display: block;
-//     justify-content: center;
-//     align-items: center;
-//     padding-top: 200px;
-//     padding-bottom: 400px;
-//   }
+//   background-color: var(--footer-dark-color);
+//   width: 100vw;
+//   max-width: 1600px;
 
 //   &__header {
 //     display: flex;
 //     justify-content: center;
 //     align-items: center;
-//     height: 120px;
+//     max-width: 696px; 
+//     font-family: var(--main-font);
 //     color: var(--ideal-white-color);
 //     font-size: var(--font-size-44);
 //     font-weight: var(--font-weight-900);
 //     line-height: var(--line-height-1_367);
 //     letter-spacing: var(--letter-spacing-006em);
 //     text-align: center;
+//     margin: 200px auto 30px auto;
 //   }
 
 //   &__btn {
@@ -109,9 +237,7 @@
 //     justify-content: center;
 //     align-items: center;
 //     color: var(--ideal-white-color);
-//     margin-top: 30px;
-//     margin-left: auto;
-//     margin-right: auto;
+//     margin: 0 auto 200px auto;
 //     padding: 10 41 10 42;
 //     width: 200px;
 //     height: 50px;
@@ -119,4 +245,4 @@
 //     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 //     border-radius: var(--border-radius-4);
 //   }
-// }
+//

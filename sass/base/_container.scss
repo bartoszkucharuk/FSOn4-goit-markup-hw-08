@@ -1,89 +1,86 @@
 .container {
   width: 100%;
-  margin: 0 15px;
-  border: 1px solid red;
-}
+  border: 2px dashed red;
+  margin: 0 auto;
 
+}
 
 @media screen and (min-width: 480px) {
   .container {
     max-width: 480px;
-    padding: 0 15px;
-    margin: 0 auto;
-
-    .header & {
-      display: flex;
-      align-items: center;
-    }
-
-    .our-team & {
-      background-color: #f5f4fa;
-      width: 100%;
-    }
-
-    .clients & {
-      margin-bottom: 94px;
-      display: flex;
-      justify-content: center;
-    }
+    // margin: 0 15px;
   }
 }
-
 
 @media screen and (min-width: 768px) {
+  .container{
+  max-width: 768px;
+  margin: 0 15px;
+  }
+}
+@media screen and (min-width: 1200px) {
   .container {
-    max-width: 768px;
-    padding: 0 15px;
-    margin: 0 auto;
-
-    .header & {
-      display: flex;
-      align-items: center;
-    }
-
-    .our-team & {
-      background-color: #f5f4fa;
-      width: 100%;
-    }
-
-    .clients & {
-      margin-bottom: 94px;
-      display: flex;
-      justify-content: center;
-    }
-  }
-}
-
-
-@media screen and (min-width: 1200px){
-.container {
   max-width: 1200px;
-  padding: 0 15px;
-  margin: 0 auto;
-
-  .header & {
-    display: flex;
-    align-items: center;
-  }
-
-  .our-team & {
-    background-color: #f5f4fa;
-    width: 100%;
-  }
-
-  .clients & {
-    margin-bottom: 94px;
-    display: flex;
-    justify-content: center;
+  margin: 0 15px;
   }
 }
-}
+ 
 
-// _________________________________________________________
 
+// @media screen and (min-width: 480px) {
+//   .container {
+//     max-width: 480px;
+//     padding: 0 15px;
+//     margin: 0 auto;
+
+//     .header & {
+//       display: flex;
+//       align-items: center;
+//     }
+
+//     .our-team & {
+//       background-color: #f5f4fa;
+//       width: 100%;
+//     }
+
+//     .clients & {
+//       margin-bottom: 94px;
+//       display: flex;
+//       justify-content: center;
+//     }
+//   }
+// }
+
+
+// @media screen and (min-width: 768px) {
+//   .container {
+//     max-width: 768px;
+//     padding: 0 15px;
+//     margin: 0 auto;
+
+//     .header & {
+//       display: flex;
+//       align-items: center;
+//     }
+
+//     .our-team & {
+//       background-color: #f5f4fa;
+//       width: 100%;
+//     }
+
+//     .clients & {
+//       margin-bottom: 94px;
+//       display: flex;
+//       justify-content: center;
+//     }
+//   }
+// }
+
+
+// @media screen and (min-width: 1200px){
 // .container {
-//   width: 1200px;
-//   align-items: center;
+//   max-width: 1200px;
+//   padding: 0 15px;
 //   margin: 0 auto;
 
 //   .header & {
@@ -102,3 +99,5 @@
 //     justify-content: center;
 //   }
 // }
+// }
+
