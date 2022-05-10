@@ -1,6 +1,3 @@
-.hero {
-  margin: 0 auto;
-}
 
 
 @media screen and (min-width: 320px) and (max-width: 767px){
@@ -9,7 +6,7 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url("../images/hero-bg-mobile.jpg");
+      url("../images/hero/hero-bg-mobile.jpg");
       background-repeat: no-repeat;
       background-position: center top;
       background-size: 480px 400px;
@@ -59,7 +56,7 @@ screen and (min-resolition: 2dppx) and (min-width: 320px) and (max-width: 767px)
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
       ),
-      url("../images/hero-bg-mobile@2x.jpg");
+      url("../images/hero/hero-bg-mobile@2x.jpg");
       
   }
 }
@@ -70,7 +67,7 @@ screen and (min-resolition: 2dppx) and (min-width: 320px) and (max-width: 767px)
   .hero {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)),
-      url("../images/hero-bg-tablet.jpg");
+      url("../images/hero/hero-bg-tablet.jpg");
     background-repeat: no-repeat;
     background-position: center top;
     background-size: 768px 400px;
@@ -117,7 +114,7 @@ screen and (min-resolition: 2dppx) and (min-width: 768px) and (max-width: 1199px
   .hero {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)),
-      url("../images/hero-bg-tablet@2x.jpg");
+      url("../images/hero/hero-bg-tablet@2x.jpg");
 
   }
 }
@@ -128,7 +125,7 @@ screen and (min-resolition: 2dppx) and (min-width: 768px) and (max-width: 1199px
   .hero {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)),
-      url("../images/hero-bg-desktop.jpg");
+      url("../images/hero/hero-bg-desktop.jpg");
     background-repeat: no-repeat;
     background-position: center top;
     background-size: 1600px 600px;
@@ -175,7 +172,7 @@ screen and (min-resolition: 2dppx) and (min-width: 768px) and (max-width: 1199px
     .hero {
       background-image: linear-gradient(rgba(47, 48, 58, 0.4),
           rgba(47, 48, 58, 0.4)),
-        url("../images/hero-bg-tablet@2x.jpg");
+        url("../images/hero/hero-bg-tablet@2x.jpg");
 
     }
   }

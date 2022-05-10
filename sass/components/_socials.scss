@@ -1,10 +1,11 @@
 .socials {
   &__list {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    padding-left: 32px;
-    padding-right: 32px;
+    width: 206px;
+    margin: auto;
+    margin-bottom: 24px;
+
   }
   &__list_footer {
     padding: 0px;
