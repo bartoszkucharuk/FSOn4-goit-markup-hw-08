@@ -112,27 +112,7 @@ img {
 
 .container {
   max-width: 100vw;
-  margin: 0;
-}
-
-@media screen and (min-width: 480px) {
-  .container {
-    max-width: 480px;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .container {
-    max-width: 768px;
-    margin: 0 auto;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .container {
-    max-width: 1200px;
-    margin: 0 auto;
-  }
+  margin: auto;
 }
 
 @media screen and (min-width: 320px) {
@@ -184,6 +164,7 @@ img {
   .header .container {
     display: flex;
     align-items: center;
+    height: 600px;
   }
   .our-team .container {
     background-color: #f5f4fa;
@@ -213,6 +194,7 @@ img {
     background-position: center top;
     background-size: 480px 400px;
     max-width: 480px;
+    height: 400px;
     display: block;
     padding-top: 118px;
   }
@@ -259,6 +241,7 @@ img {
     background-position: center top;
     background-size: 768px 400px;
     max-width: 768px;
+    height: 400px;
     display: block;
     padding-top: 118px;
   }
@@ -305,6 +288,7 @@ img {
     background-position: center top;
     background-size: 1600px 600px;
     max-width: 1600px;
+    height: 600px;
     display: block;
     padding-top: 200px;
   }
