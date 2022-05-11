@@ -1,3 +1,118 @@
+@media screen and (min-width: 320px) and (max-width: 767px) {
+
+  .clients {
+    &__header {
+      display: flex;
+      justify-content: center;
+      font-weight: var(--font-weight-700);
+      font-size: var(--font-size-36);
+      line-height: var(--line-height-1_172);
+      padding-top: 94px;
+      padding-bottom: 50px;
+    }
+
+    &__list {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    &__icon {
+      display: flex;
+      max-height: 92px;
+      max-width: 210px;
+      fill: var(--social-icon-fill);
+      padding: 16px 32px;
+    }
+
+    &__item {
+      display: flex;
+      flex-wrap:wrap;
+      max-width: 210px;
+      align-content: space-between;
+      border: 1px solid var(--social-icon-fill);
+      border-radius: var(--border-radius-4);
+      margin: 15px;
+
+      &:hover,
+      &:focus {
+        border-color: var(--secondary-color);
+        fill: var(--secondary-color);
+        transition: var(--transition-cubic-bezier-250ms);
+      }
+
+      &:not(:last-child) {
+        margin: 15px;
+      }
+    }
+
+    &__link:hover &__icon,
+    &__link:focus &__icon {
+      fill: var(--secondary-color);
+      transition: var(--transition-cubic-bezier-250ms);
+    }
+  }
+}
+
+
+
+
+
+@media screen and (min-width: 767px) and (max-width: 1199px){
+
+.clients {
+  &__header {
+    display: flex;
+    justify-content: center;
+    font-weight: var(--font-weight-700);
+    font-size: var(--font-size-36);
+    line-height: var(--line-height-1_172);
+    padding-top: 94px;
+    padding-bottom: 50px;
+  }
+
+        &__list {
+          display: flex;
+          flex-wrap: wrap;
+        }
+    
+        &__icon {
+          display: flex;
+          max-height: 92px;
+          max-width: 226px;
+          fill: var(--social-icon-fill);
+          padding: 16px 32px;
+        }
+    
+        &__item {
+          display: flex;
+          flex-wrap: wrap;
+          max-width: 226px;
+          align-content: space-between;
+          border: 1px solid var(--social-icon-fill);
+          border-radius: var(--border-radius-4);
+          margin: 15px;
+    &:hover,
+    &:focus {
+      border-color: var(--secondary-color);
+      fill: var(--secondary-color);
+      transition: var(--transition-cubic-bezier-250ms);
+    }
+
+
+  }
+
+  &__link:hover &__icon,
+  &__link:focus &__icon {
+    fill: var(--secondary-color);
+    transition: var(--transition-cubic-bezier-250ms);
+  }
+}
+}
+
+
+
+@media screen and (min-width: 1200px){
+
 .clients {
   &__header {
     display: flex;
@@ -42,4 +157,5 @@
     fill: var(--secondary-color);
     transition: var(--transition-cubic-bezier-250ms);
   }
+}
 }
