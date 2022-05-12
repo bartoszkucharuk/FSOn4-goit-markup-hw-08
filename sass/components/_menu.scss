@@ -1,3 +1,66 @@
+@media screen and (min-width: 370px) and (max-width: 767px) {
+
+  .nav .section {
+    padding-bottom: 100px;
+    padding-top: 100px;
+  }
+
+  .menu {
+ 
+    &__list {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    &__item {
+      position: relative;
+      font-size: var(--font-size-14);
+      line-height: var(--line-height-1_143);
+      letter-spacing: var(--letter-spacing-002em);
+
+      &:not(:last-child) {
+        margin-right: 60px;
+      }
+
+      &::after {
+        position: absolute;
+        content: "";
+        width: 0;
+        height: 4px;
+        bottom: -31px;
+        left: 0;
+        background: var(--secondary-color);
+        border-radius: var(--border-radius-2);
+      }
+
+      &.active::after {
+        color: var(--secondary-color);
+        background: var(--secondary-color);
+        width: 100%;
+      }
+
+      &:hover::after {
+        width: 100%;
+        transition: var(--transition-cubic-bezier-250ms);
+      }
+    }
+
+    &__link {
+      color: var(--font-black-color);
+
+      &:hover,
+      &:focus {
+        color: var(--secondary-color);
+        transition: var(--transition-cubic-bezier-250ms);
+      }
+    }
+  }
+}
+
+
+@media screen and (min-width: 767px) and (max-width: 1199px) {
+
 .nav .section {
   padding-bottom: 100px;
   padding-top: 100px;
@@ -50,6 +113,65 @@
     &:focus {
       color: var(--secondary-color);
       transition: var(--transition-cubic-bezier-250ms);
+    }}  }
+}
+
+
+@media screen and (min-width: 1200px) {
+
+  .nav .section {
+    padding-bottom: 100px;
+    padding-top: 100px;
+  }
+
+  .menu {
+    &__list {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    &__item {
+      position: relative;
+      font-size: var(--font-size-14);
+      line-height: var(--line-height-1_143);
+      letter-spacing: var(--letter-spacing-002em);
+
+      &:not(:last-child) {
+        margin-right: 60px;
+      }
+
+      &::after {
+        position: absolute;
+        content: "";
+        width: 0;
+        height: 4px;
+        bottom: -31px;
+        left: 0;
+        background: var(--secondary-color);
+        border-radius: var(--border-radius-2);
+      }
+
+      &.active::after {
+        color: var(--secondary-color);
+        background: var(--secondary-color);
+        width: 100%;
+      }
+
+      &:hover::after {
+        width: 100%;
+        transition: var(--transition-cubic-bezier-250ms);
+      }
+    }
+
+    &__link {
+      color: var(--font-black-color);
+
+      &:hover,
+      &:focus {
+        color: var(--secondary-color);
+        transition: var(--transition-cubic-bezier-250ms);
+      }
     }
   }
 }

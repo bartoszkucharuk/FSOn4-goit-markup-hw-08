@@ -1,10 +1,39 @@
+@media screen and (min-width: 370px) {
+
+  .logo {
+    display: flex;
+    align-items: center;
+    justify-content:center;
+
+
+    &__link {
+      font-family: var(--secondary-font);
+      color: var(--font-black-color);
+      font-weight: var(--font-weight-700);
+      font-size: var(--font-size-26);
+      line-height: var(--line-height-1_192);
+      letter-spacing: var(--letter-spacing-003em);
+
+      &_footer {
+        color: var(--ideal-white-color);
+        margin: auto;
+      }
+    }
+
+    &__accent {
+      color: var(--secondary-color);
+    }
+  }
+}
+
+
 @media screen and (min-width: 767px) {
 
 .logo {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 26px 0;
+
 
   &__link {
     font-family: var(--secondary-font);
@@ -13,6 +42,7 @@
     font-size: var(--font-size-26);
     line-height: var(--line-height-1_192);
     letter-spacing: var(--letter-spacing-003em);
+    
     &_footer {
       color: var(--ideal-white-color);
       margin: auto;

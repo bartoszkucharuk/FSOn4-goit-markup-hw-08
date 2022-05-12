@@ -1,4 +1,19 @@
-@media screen and (min-width: 767px){
+@media screen and (min-width: 370px) and (max-width: 767px) {
+
+  .header {
+    height: 80px;
+    align-items: center;
+    border-bottom: 1px solid var(--header-background-color);
+
+    & .contact {
+      margin-left: auto;
+    }
+  }
+}
+
+
+
+@media screen and (min-width: 767px) and (max-width: 1199px){
 
 .header {
   height: 80px;
@@ -9,4 +24,17 @@
     margin-left: auto;
   }
 }
+}
+
+@media screen and (min-width: 1200px){
+
+  .header {
+    height: 80px;
+    align-items: center;
+    border-bottom: 1px solid var(--header-background-color);
+
+    & .contact {
+      margin-left: auto;
+    }
+  }
 }
