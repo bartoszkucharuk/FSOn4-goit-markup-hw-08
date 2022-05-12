@@ -1,7 +1,7 @@
 @media screen and (min-width: 370px) and (max-width: 767px) {
 
   .header {
-    height: 80px;
+    height: 60px;
     align-items: center;
     border-bottom: 1px solid var(--header-background-color);
 
@@ -10,8 +10,6 @@
     }
   }
 }
-
-
 
 @media screen and (min-width: 767px) and (max-width: 1199px){
 
@@ -30,7 +28,7 @@
 
   .header {
     height: 80px;
-    align-items: center;
+    align-items:center;
     border-bottom: 1px solid var(--header-background-color);
 
     & .contact {
