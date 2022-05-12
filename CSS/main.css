@@ -1072,7 +1072,7 @@ img {
     content: "";
     width: 0;
     height: 4px;
-    bottom: -27px;
+    bottom: -32px;
     left: 0;
     background: var(--secondary-color);
     border-radius: var(--border-radius-2);
@@ -1119,7 +1119,7 @@ img {
     content: "";
     width: 0;
     height: 4px;
-    bottom: -27px;
+    bottom: -32px;
     left: 0;
     background: var(--secondary-color);
     border-radius: var(--border-radius-2);

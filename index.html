@@ -21,7 +21,7 @@
 </head>
 
 <body>
- <header class="header section">
+    <header class="header section">
         <div class="container">
 
             <div class="logo"><a class="logo__link link" href="index.html"><span class="logo__accent">Web</span>Studio</a>
@@ -56,7 +56,7 @@
             </div>
         </div>
 
- <section class="about section">
+    <section class="about section">
             <div class="container">
                 <ul class="about__list list">
                     <li class="about__item">
@@ -145,8 +145,24 @@
                 <h2 class="our-team__header">Nasz zespół</h2>
                 <ul class="our-team__list list">
                     <li class="our-team__item">
-                        <img class="our-team__img" src="images/our-team/our-team-1-mobile.jpg"
+
+                        <picture class="our-team__picture">
+                            <source
+                                srcset="./images/our-team/our-team-1-mobile.jpg 1x, ./images/our-team/our-team-1-mobile@2x.jpg 2x"
+                                media="(min-width: 370px) and (max-width: 767px)">
+                        
+                            <source
+                                srcset="./images/our-team/our-team-1-tablet.jpg 1x, ./images/our-team/our-team-1-tablet@2x.jpg 2x"
+                                media="(min-width: 768px) and (max-width: 1199px)">
+
+                            <source
+                                srcset="./images/our-team/our-team-1-desktop.jpg 1x, ./images/our-team/our-team-1-desktop@2x.jpg 2x"
+                                media="(min-width: 1200px)">
+
+                        <img class="our-team__img" src="./images/our-team/our-team-1-tablet.jpg.jpg"
                                 alt="photo of John Doe 1" width="270" height="260">
+                        </picture>
+
                             <h2 class="our-team__photo-header">John Doe</h2>
                             <p class="our-team__photo-description">Product Designer</p>
 
@@ -186,8 +202,24 @@
                     </li>
 
                     <li class="our-team__item">
-                        <img class="our-team__img" src="images/our-team/our-team-2-mobile.jpg" alt="photo of John Doe 2" width="270"
-                            height="260">
+
+                        <picture class="our-team__picture">
+                            <source
+                                srcset="./images/our-team/our-team-2-mobile.jpg 1x, ./images/our-team/our-team-2-mobile@2x.jpg 2x"
+                                media="(min-width: 370px) and (max-width: 767px)">
+                        
+                            <source
+                                srcset="./images/our-team/our-team-2-tablet.jpg 1x, ./images/our-team/our-team-2-tablet@2x.jpg 2x"
+                                media="(min-width: 768px) and (max-width: 1199px)">
+                        
+                            <source
+                                srcset="./images/our-team/our-team-2-desktop.jpg 1x, ./images/our-team/our-team-2-desktop@2x.jpg 2x"
+                                media="(min-width: 1200px)">
+                        
+                            <img class="our-team__img" src="./images/our-team/our-team-2-tablet.jpg" alt="photo of John Doe 2" width="270"
+                                height="260">
+                        </picture>
+                        
                         <h2 class="our-team__photo-header">John Doe</h2>
                         <p class="our-team__photo-description">Frontend Developer</p>
 
@@ -228,8 +260,24 @@
 
 
                     <li class="our-team__item">
-                        <img class="our-team__img" src="images/our-team/our-team-3-mobile.jpg" alt="photo of John Doe 3" width="270"
-                            height="260">
+
+                        <picture class="our-team__picture">
+                            <source
+                                srcset="./images/our-team/our-team-3-mobile.jpg 1x, ./images/our-team/our-team-3-mobile@2x.jpg 2x"
+                                media="(min-width: 370px) and (max-width: 767px)">
+                        
+                            <source
+                                srcset="./images/our-team/our-team-3-tablet.jpg 1x, ./images/our-team/our-team-3-tablet@2x.jpg 2x"
+                                media="(min-width: 768px) and (max-width: 1199px)">
+                        
+                            <source
+                                srcset="./images/our-team/our-team-3-desktop.jpg 1x, ./images/our-team/our-team-3-desktop@2x.jpg 2x"
+                                media="(min-width: 1200px)">
+                        
+                            <img class="our-team__img" src="./images/our-team/our-team-3-tablet.jpg" alt="photo of John Doe 3" width="270"
+                                height="260">
+                        </picture>
+                        
                         <h2 class="our-team__photo-header">John Doe</h2>
                         <p class="our-team__photo-description">Marketing</p>
 
@@ -270,8 +318,23 @@
 
 
                     <li class="our-team__item">
-                        <img class="our-team__img" src="images/our-team/our-team-4-mobile.jpg" alt="photo of John Doe 4" width="270"
-                            height="260">
+
+                        <picture class="our-team__picture">
+                            <source
+                                srcset="./images/our-team/our-team-4-mobile.jpg 1x, ./images/our-team/our-team-4-mobile@2x.jpg 2x"
+                                media="(min-width: 370px) and (max-width: 767px)">
+                        
+                            <source
+                                srcset="./images/our-team/our-team-4-tablet.jpg 1x, ./images/our-team/our-team-4-tablet@2x.jpg 2x"
+                                media="(min-width: 768px) and (max-width: 1199px)">
+                        
+                            <source srcset="./images/our-team/our-team-4-desktop.jpg 1x, ./images/our-team/our-team-4-desktop@2x.jpg 2x"
+                                    media="(min-width: 1200px)">
+                        
+                            <img class="our-team__img" src="./images/our-team/our-team-4-tablet.jpg" alt="photo of John Doe 4" width="270"
+                                height="260">
+                        </picture>
+
                         <h2 class="our-team__photo-header">John Doe</h2>
                         <p class="our-team__photo-description">UI Designer</p>
 
@@ -370,9 +433,7 @@
             </div>
         </section>
     </main>
-
-
-<footer class="footer section">
+    <footer class="footer section">
     <div class="footer__content container">
         <div class="footer__wrapper_adress">
             <a class="logo__link logo__link_footer link" href="index.html"><span class="logo__accent">Web</span>Studio</a>
@@ -437,7 +498,7 @@
             </form>
         </div>
     </div>
-</footer>
+    </footer>
 
 <!-- <div class="backdrop is-hidden" data-modal> -->
     <!-- <div class="modal"> -->
