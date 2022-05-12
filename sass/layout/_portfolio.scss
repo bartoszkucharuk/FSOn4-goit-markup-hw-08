@@ -1,3 +1,178 @@
+@media screen and (min-width: 370px) and (max-width: 767px) {
+.portfolio {
+  &__container {
+    display: block;
+    justify-content: center;
+    padding-bottom: 30px;
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  &__item {
+    display: block;
+    position: relative;
+    justify-content: space-around;
+    width: 450px;
+    height: auto;
+    border: 1px solid var(--portfolio-item-border-color);
+    margin-bottom: 30px;
+    overflow: hidden;
+  }
+
+  &__item:hover,
+  &__item:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
+    transition: var(--transition-cubic-bezier-250ms);
+    cursor: pointer;
+  }
+
+  &__photo-wrapper {
+    position: relative;
+    overflow: hidden;
+  }
+
+  &__img-overlay {
+    position: absolute;
+    display: block;
+    font-size: var(--font-size-16);
+    line-height: var(--line-height-1_5660);
+    font-weight: var(--font-weight-400);
+    letter-spacing: var(--letter-spacing-003em);
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    width: 100%;
+    height: 100%;
+    padding-top: 49px;
+    padding-bottom: 49px;
+    padding-left: 24px;
+    padding-right: 45px;
+    color: var(--ideal-white-color);
+    background: rgba(33, 150, 243, 0.9);
+    transform: translateY(100%);
+    transition: var(--transition-cubic-bezier-250ms);
+  }
+
+  &__item:hover &__img-overlay {
+    transform: translateY(0%);
+  }
+
+  &__item-header {
+    font-family: var(--main-font);
+    font-style: normal;
+    font-weight: var(--font-weight-700);
+    font-size: var(--font-size-18);
+    line-height: var(--line-height-2_000);
+    letter-spacing: var(--letter-spacing-006em);
+    padding-left: 24px;
+  }
+
+  &__item-text {
+    font-size: var(--font-size-16);
+    line-height: var(--line-height-1_875);
+    letter-spacing: var(--letter-spacing-003em);
+    color: var(--main-color);
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+}
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+.portfolio {
+  &__container {
+    display: block;
+    justify-content: center;
+    padding-bottom: 94px;
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  &__item {
+    display: block;
+    position: relative;
+    justify-content: space-around;
+    width: 354px;
+    height: auto;
+    border: 1px solid var(--portfolio-item-border-color);
+    margin-bottom: 30px;
+    overflow: hidden;
+  }
+
+  &__item:hover,
+  &__item:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
+    transition: var(--transition-cubic-bezier-250ms);
+    cursor: pointer;
+  }
+
+  &__photo-wrapper {
+    position: relative;
+    overflow: hidden;
+  }
+
+  &__img-overlay {
+    position: absolute;
+    display: block;
+    font-size: var(--font-size-16);
+    line-height: var(--line-height-1_5660);
+    font-weight: var(--font-weight-400);
+    letter-spacing: var(--letter-spacing-003em);
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    width: 100%;
+    height: 100%;
+    padding-top: 49px;
+    padding-bottom: 49px;
+    padding-left: 24px;
+    padding-right: 45px;
+    color: var(--ideal-white-color);
+    background: rgba(33, 150, 243, 0.9);
+    transform: translateY(100%);
+    transition: var(--transition-cubic-bezier-250ms);
+  }
+
+  &__item:hover &__img-overlay {
+    transform: translateY(0%);
+  }
+
+  &__item-header {
+    font-family: var(--main-font);
+    font-style: normal;
+    font-weight: var(--font-weight-700);
+    font-size: var(--font-size-18);
+    line-height: var(--line-height-2_000);
+    letter-spacing: var(--letter-spacing-006em);
+    padding-left: 24px;
+  }
+
+  &__item-text {
+    font-size: var(--font-size-16);
+    line-height: var(--line-height-1_875);
+    letter-spacing: var(--letter-spacing-003em);
+    color: var(--main-color);
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+}
+}
+
+@media screen and (min-width: 1200px){
 .portfolio {
   &__container {
     display: block;
@@ -81,4 +256,5 @@
     padding-left: 24px;
     padding-right: 24px;
   }
+}
 }
