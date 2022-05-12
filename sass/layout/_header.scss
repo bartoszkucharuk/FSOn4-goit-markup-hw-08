@@ -28,11 +28,12 @@
 
   .header {
     height: 80px;
-    align-items:center;
+    align-items: center;
     border-bottom: 1px solid var(--header-background-color);
 
     & .contact {
       margin-left: auto;
+
     }
   }
 }

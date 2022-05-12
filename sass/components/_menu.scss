@@ -62,10 +62,8 @@
 @media screen and (min-width: 767px) and (max-width: 1199px) {
 
 .nav .section {
-  padding-bottom: 100px;
-  padding-top: 100px;
-}
 
+}
 .menu {
   &__list {
     display: flex;
@@ -88,7 +86,7 @@
       content: "";
       width: 0;
       height: 4px;
-      bottom: -31px;
+      bottom: -27px;
       left: 0;
       background: var(--secondary-color);
       border-radius: var(--border-radius-2);
@@ -138,7 +136,7 @@
       letter-spacing: var(--letter-spacing-002em);
 
       &:not(:last-child) {
-        margin-right: 60px;
+        margin-right: 46px;
       }
 
       &::after {
@@ -146,7 +144,7 @@
         content: "";
         width: 0;
         height: 4px;
-        bottom: -31px;
+        bottom: -27px;
         left: 0;
         background: var(--secondary-color);
         border-radius: var(--border-radius-2);
