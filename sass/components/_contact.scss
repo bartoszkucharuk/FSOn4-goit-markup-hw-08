@@ -1,6 +1,8 @@
-.contact {
+  .contact {
+
   &__list {
     display: flex;
+    flex-direction: column;  
   }
 
   &__tel,
@@ -8,7 +10,6 @@
     font-size: var(--font-size-14);
     line-height: var(--line-height-1_143);
     letter-spacing: var(--letter-spacing-002em);
-    padding: 1, 0;
     color: var(--main-color);
     &:hover,
     &:focus {
@@ -17,14 +18,6 @@
     }
   }
 
-  &__mail {
-    margin-left: 10px;
-  }
-
-  &__tel {
-    margin-right: 27px;
-    margin-left: 50px;
-  }
 
   &__mail-icon,
   &__tel-icon {
@@ -42,5 +35,6 @@
   &__tel-icon {
     width: 10px;
     height: 16px;
+
   }
 }

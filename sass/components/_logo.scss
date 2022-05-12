@@ -1,5 +1,10 @@
+@media screen and (min-width: 767px) {
+
 .logo {
-  margin: 24px 93px 24px 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 26px 0;
 
   &__link {
     font-family: var(--secondary-font);
@@ -17,4 +22,5 @@
   &__accent {
     color: var(--secondary-color);
   }
+}
 }

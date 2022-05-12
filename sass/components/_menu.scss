@@ -6,7 +6,9 @@
 .menu {
   &__list {
     display: flex;
-  }
+    justify-content: center;
+    align-items: center;
+   }
 
   &__item {
     position: relative;
@@ -15,7 +17,7 @@
     letter-spacing: var(--letter-spacing-002em);
 
     &:not(:last-child) {
-      margin-right: 46px;
+      margin-right: 60px;
     }
 
     &::after {
@@ -23,7 +25,7 @@
       content: "";
       width: 0;
       height: 4px;
-      bottom: -33px;
+      bottom: -31px;
       left: 0;
       background: var(--secondary-color);
       border-radius: var(--border-radius-2);

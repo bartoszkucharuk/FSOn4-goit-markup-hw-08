@@ -1,3 +1,5 @@
+@media screen and (min-width: 767px){
+
 .header {
   height: 80px;
   align-items: center;
@@ -6,4 +8,5 @@
   & .contact {
     margin-left: auto;
   }
+}
 }
