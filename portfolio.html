@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>goit-markup-hw-07</title>
+    <title>goit-markup-hw-08</title>
 
     <!-- modern-normalize link -->
     <link rel="stylesheet" href="https://cdn.tutorialjinni.com/modern-normalize/1.1.0/modern-normalize.css">
@@ -30,8 +30,8 @@
 
         <div class="nav">
             <ul class="menu__list list">
-                <li class="menu__item active"><a class="menu__link link" href="index.html">Agencja</a></li>
-                <li class="menu__item"><a class="menu__link link" href="portfolio.html">Portfolio</a></li>
+                <li class="menu__item"><a class="menu__link link" href="index.html">Agencja</a></li>
+                <li class="menu__item active"><a class="menu__link link" href="portfolio.html">Portfolio</a></li>
                 <li class="menu__item"><a class="menu__link link" href="#">Kontakt</a></li>
             </ul>
         </div>
@@ -69,8 +69,21 @@
                 <ul class="portfolio__list list">
                     <li class="portfolio__item">
                         <div class="portfolio__photo-wrapper">
-                            <img class="portfolio__img" src="images/technocrack.jpg"
-                            alt="strona internetowa Technocrack" width="370" height="294">
+                            
+                            <picture class="our-team__picture">
+                                <source srcset="./images/portfolio/technocrack-mobile.jpg 1x, ./images/portfolio/technocrack-mobile@2x.jpg 2x"
+                                        media="(min-width: 370px) and (max-width: 767px)">
+
+                                <source srcset="./images/portfolio/technocrack-tablet.jpg 1x, ./images/portfolio/technocrack-tablet@2x.jpg 2x"
+                                        media="(min-width: 768px) and (max-width: 1199px)">
+
+                                <source srcset="./images/portfolio/technocrack-desktop.jpg 1x, ./images/portfolio/technocrack-desktop@2x.jpg 2x"
+                                        media="(min-width: 1200px)">
+
+                                <img class="portfolio__img" src="images/technocrack.jpg" alt="strona internetowa Technocrack">
+                            </picture>
+
+                            
                             <div class="portfolio__img-overlay">
                             <p class="portfolio__text-overlay">Technocrack jest popularną platformą wykorzystywaną do rozpowszechniania koronawirusa. Firmy
                             wykorzystują tę platformę do celów szpiegowskich i ataków na niezabezpieczone serwery konkurencji.</p>
@@ -83,8 +96,20 @@
 
                     <li class="portfolio__item">
                         <div class="portfolio__photo-wrapper">
-                            <img class="portfolio__img" src="images/grafika_new_orlean_vs_golden_star.jpg"
-                            alt="dizajn koszykówki" width="370" height="294">
+
+                            <picture class="our-team__picture">
+                                <source srcset="./images/portfolio/grafika-mobile.jpg 1x, ./images/portfolio/grafika-mobile@2x.jpg 2x"
+                                    media="(min-width: 370px) and (max-width: 767px)">
+                            
+                                <source srcset="./images/portfolio/grafika-tablet.jpg 1x, ./images/portfolio/grafika-tablet@2x.jpg 2x"
+                                    media="(min-width: 768px) and (max-width: 1199px)">
+                            
+                                <source srcset="./images/portfolio/grafika-desktop.jpg 1x, ./images/portfolio/grafika-desktop@2x.jpg 2x"
+                                    media="(min-width: 1200px)">
+                            
+                                <img class="portfolio__img" src="images/grafika_new_orlean_vs_golden_star.jpg" alt="dizajn koszykówki">
+                            </picture>
+
 
                             <div class="portfolio__img-overlay">
                             <p class="portfolio__text-overlay">Technocrack jest popularną platformą wykorzystywaną do rozpowszechniania koronawirusa. Firmy wykorzystują tę platformę do celów szpiegowskich i ataków na niezabezpieczone serwery konkurencji.</p>
@@ -97,7 +122,21 @@
 
                     <li class="portfolio__item">
                         <div class="portfolio__photo-wrapper">
-                            <img class="portfolio__img" src="images/restauracja_seafood.jpg" alt="logo restauracji Seafood" width="370" height="294">
+
+                            <picture class="our-team__picture">
+                                <source srcset="./images/portfolio/seafood-mobile.jpg 1x, ./images/portfolio/seafood-mobile@2x.jpg 2x"
+                                        media="(min-width: 370px) and (max-width: 767px)">
+                            
+                                <source srcset="./images/portfolio/seafood-tablet.jpg 1x, ./images/portfolio/seafood-tablet@2x.jpg 2x"
+                                        media="(min-width: 768px) and (max-width: 1199px)">
+                            
+                                <source srcset="./images/portfolio/seafood-desktop.jpg 1x, ./images/portfolio/seafood-desktop@2x.jpg 2x"
+                                        media="(min-width: 1200px)">
+                            
+                                <img class="portfolio__img" src="images/restauracja_seafood.jpg" alt="logo restauracji Seafood">
+                            </picture>
+
+
                             <div class="portfolio__img-overlay">
                             <p class="portfolio__text-overlay">Technocrack jest popularną platformą wykorzystywaną do rozpowszechniania koronawirusa. Firmy
                             wykorzystują tę platformę do celów szpiegowskich i ataków na niezabezpieczone serwery konkurencji.</p>
@@ -110,7 +149,20 @@
 
                     <li class="portfolio__item">
                         <div class="portfolio__photo-wrapper">
-                            <img class="portfolio__img" src="images/projekt_prime.jpg" alt="zdjęcie słuchawek" width="370" height="294">
+
+                            <picture class="our-team__picture">
+                                <source srcset="./images/portfolio/prime-mobile.jpg 1x, ./images/portfolio/prime-mobile@2x.jpg 2x"
+                                        media="(min-width: 370px) and (max-width: 767px)">
+                            
+                                <source srcset="./images/portfolio/prime-tablet.jpg 1x, ./images/portfolio/prime-tablet@2x.jpg 2x"
+                                        media="(min-width: 768px) and (max-width: 1199px)">
+                            
+                                <source srcset="./images/portfolio/prime-desktop.jpg 1x, ./images/portfolio/prime-desktop@2x.jpg 2x"
+                                        media="(min-width: 1200px)">
+                            
+                                <img class="portfolio__img" src="images/projekt_prime.jpg" alt="zdjęcie słuchawek">
+                            </picture>
+                            
                             <div class="portfolio__img-overlay">
                             <p class="portfolio__text-overlay">Technocrack jest popularną platformą wykorzystywaną do rozpowszechniania koronawirusa. Firmy
                             wykorzystują tę platformę do celów szpiegowskich i ataków na niezabezpieczone serwery konkurencji.</p>
@@ -122,7 +174,20 @@
 
                     <li class="portfolio__item">
                         <div class="portfolio__photo-wrapper">
-                            <img class="portfolio__img" src="images/projekt_boxes.jpg" alt="grafika pudełek" width="370" height="294">
+
+                            <picture class="our-team__picture">
+                                <source srcset="./images/portfolio/boxes-mobile.jpg 1x, ./images/portfolio/boxes-mobile@2x.jpg 2x"
+                                    media="(min-width: 370px) and (max-width: 767px)">
+                            
+                                <source srcset="./images/portfolio/boxes-tablet.jpg 1x, ./images/portfolio/boxes-tablet@2x.jpg 2x"
+                                    media="(min-width: 768px) and (max-width: 1199px)">
+                            
+                                <source srcset="./images/portfolio/boxes-desktop.jpg 1x, ./images/portfolio/boxes-desktop@2x.jpg 2x"
+                                    media="(min-width: 1200px)">
+                            
+                                <img class="portfolio__img" src="images/projekt_boxes.jpg" alt="grafika pudełek">
+                            </picture>
+
                             <div class="portfolio__img-overlay">
                             <p class="portfolio__text-overlay">Technocrack jest popularną platformą wykorzystywaną do rozpowszechniania koronawirusa. Firmy
                             wykorzystują tę platformę do celów szpiegowskich i ataków na niezabezpieczone serwery konkurencji.</p>
@@ -135,8 +200,20 @@
 
                     <li class="portfolio__item">
                         <div class="portfolio__photo-wrapper">
-                            <img class="portfolio__img" src="images/inspiration_has_no_boarders.jpg"
-                            alt="ekran monitora" width="370" height="294">
+
+                            <picture class="our-team__picture">
+                                <source srcset="./images/portfolio/inspiration-mobile.jpg 1x, ./images/portfolio/inspiration-mobile@2x.jpg 2x"
+                                        media="(min-width: 370px) and (max-width: 767px)">
+                            
+                                <source srcset="./images/portfolio/inspiration-tablet.jpg 1x, ./images/portfolio/inspiration-tablet@2x.jpg 2x"
+                                        media="(min-width: 768px) and (max-width: 1199px)">
+                            
+                                <source srcset="./images/portfolio/inspiration-desktop.jpg 1x, ./images/portfolio/inspiration-desktop@2x.jpg 2x"
+                                        media="(min-width: 1200px)">
+                            
+                                <img class="portfolio__img" src="images/inspiration_has_no_boarders.jpg" alt="ekran monitora">
+                            </picture>
+
                             <div class="portfolio__img-overlay">
                                 <p class="portfolio__text-overlay">Technocrack jest popularną platformą wykorzystywaną do rozpowszechniania koronawirusa. Firmy
                                 wykorzystują tę platformę do celów szpiegowskich i ataków na niezabezpieczone serwery konkurencji.</p>
@@ -148,7 +225,20 @@
 
                     <li class="portfolio__item">
                         <div class="portfolio__photo-wrapper">
-                            <img class="portfolio__img" src="images/magazyn_limited_edition.jpg" alt="otwarte strony magazynu" width="370" height="294">
+
+                            <picture class="our-team__picture">
+                                <source srcset="./images/portfolio/magazyn-mobile.jpg 1x, ./images/portfolio/magazyn-mobile@2x.jpg 2x"
+                                        media="(min-width: 370px) and (max-width: 767px)">
+                            
+                                <source srcset="./images/portfolio/magazyn-tablet.jpg 1x, ./images/portfolio/magazyn-tablet@2x.jpg 2x"
+                                        media="(min-width: 768px) and (max-width: 1199px)">
+                            
+                                <source srcset="./images/portfolio/magazyn-desktop.jpg 1x, ./images/portfolio/magazyn-desktop@2x.jpg 2x"
+                                        media="(min-width: 1200px)">
+                            
+                                <img class="portfolio__img" src="images/magazyn_limited_edition.jpg" alt="otwarte strony magazynu">
+                            </picture>
+
                             <div class="portfolio__img-overlay">
                                 <p class="portfolio__text-overlay">Technocrack jest popularną platformą wykorzystywaną do rozpowszechniania koronawirusa. Firmy
                                 wykorzystują tę platformę do celów szpiegowskich i ataków na niezabezpieczone serwery konkurencji.</p>
@@ -161,7 +251,20 @@
 
                     <li class="portfolio__item">
                         <div class="portfolio__photo-wrapper">
-                            <img class="portfolio__img" src="images/projekt_LAB.jpg" alt="elegancka etykieta" width="370" height="294">
+
+                            <picture class="our-team__picture">
+                                <source srcset="./images/portfolio/LAB-mobile.jpg 1x, ./images/portfolio/LAB-mobile@2x.jpg 2x"
+                                        media="(min-width: 370px) and (max-width: 767px)">
+                            
+                                <source srcset="./images/portfolio/LAB-tablet.jpg 1x, ./images/portfolio/LAB-tablet@2x.jpg 2x"
+                                        media="(min-width: 768px) and (max-width: 1199px)">
+                            
+                                <source srcset="./images/portfolio/LAB-desktop.jpg 1x, ./images/portfolio/LAB-desktop@2x.jpg 2x"
+                                        media="(min-width: 1200px)">
+                            
+                                <img class="portfolio__img" src="images/projekt_LAB.jpg" alt="elegancka etykieta">
+                            </picture>
+
                             <div class="portfolio__img-overlay">
                                 <p class="portfolio__text-overlay">Technocrack jest popularną platformą wykorzystywaną do rozpowszechniania koronawirusa. Firmy wykorzystują tę platformę do celów szpiegowskich i ataków na niezabezpieczone serwery konkurencji.</p>
                             </div>
@@ -173,7 +276,20 @@
 
                     <li class="portfolio__item">
                         <div class="portfolio__photo-wrapper">
-                            <img class="portfolio__img"src="images/growing_business.jpg" alt="dłonie piszące na laptopie" width="370" height="294">
+
+                            <picture class="our-team__picture">
+                                <source srcset="./images/portfolio/growing-mobile.jpg 1x, ./images/portfolio/growing-mobile@2x.jpg 2x"
+                                        media="(min-width: 370px) and (max-width: 767px)">
+                            
+                                <source srcset="./images/portfolio/growing-tablet.jpg 1x, ./images/portfolio/growing-tablet@2x.jpg 2x"
+                                        media="(min-width: 768px) and (max-width: 1199px)">
+                            
+                                <source srcset="./images/portfolio/growing-desktop.jpg 1x, ./images/portfolio/growing-desktop@2x.jpg 2x"
+                                        media="(min-width: 1200px)">
+                            
+                                <img class="portfolio__img" src="images/growing_business.jpg" alt="dłonie piszące na laptopie">
+                            </picture>
+
                             <div class="portfolio__img-overlay">
                                 <p class="portfolio__text-overlay">Technocrack jest popularną platformą wykorzystywaną do rozpowszechniania koronawirusa. Firmy
                                 wykorzystują tę platformę do celów szpiegowskich i ataków na niezabezpieczone serwery konkurencji.</p>
