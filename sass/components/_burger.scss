@@ -1,19 +1,9 @@
 @media screen and (min-width: 370px) and (max-width: 767px) {
-.burger__logo {
-display: flex;
-
-}
-
-.burger__menu {
 
 
-}
 
-.burger__icon {
-    
-}
 
-    .burger__backdrop {
+    .burger-backdrop {
         position: fixed;
         top: 0;
         left: 0;
@@ -24,7 +14,7 @@ display: flex;
         // cursor: not-allowed;
     }
 
-    .burger__window {
+    .burger-modal {
         position: absolute;
         top: 50%;
         left: 50%;
@@ -38,7 +28,7 @@ display: flex;
         padding: 40px;
     }
 
-    .burger__close-btn {
+    .burger-close-btn {
         position: absolute;
         top: 8px;
         right: 8px;
@@ -52,13 +42,36 @@ display: flex;
         cursor: pointer;
     }
 
-    .burger__close-btn svg {
+    .burger-close-btn svg {
         width: 11px;
         height: 11px;
     }
 
+
+.burger-open-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 15px;
+    margin-left: auto;
+    fill: var(--current-color);
+    max-width: 16px;
+    height: 12px;
+    }
 }
+    
+
+
+
+
+
+
+
+
+
 
 @media screen and (min-width: 768px) {
-display: none;
-}
+    .burger-open-btn{
+    display: none;}} 
+
+    
