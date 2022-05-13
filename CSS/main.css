@@ -27,7 +27,9 @@
   --font-size-16: 16px;
   --font-size-18: 18px;
   --font-size-20: 20px;
+  --font-size-24: 24px;
   --font-size-26: 26px;
+  --font-size-34: 34px;
   --font-size-36: 36px;
   --font-size-44: 44px;
   --line-height-1_143: 1.143;
@@ -35,6 +37,7 @@
   --line-height-1_172: 1.172;
   --line-height-1_174: 1.174;
   --line-height-1_192: 1.192;
+  --line-height-1_222: 1.222;
   --line-height-1_250: 1.25;
   --line-height-1_367: 1.367;
   --line-height-1_5660: 1.56;
@@ -2318,60 +2321,104 @@ img {
   }
 }
 
-@media screen and (min-width: 370px) and (max-width: 767px) {
-  .burger-backdrop {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.2);
-    transition: var(--transition-cubic-bezier-backdrop-750ms);
-  }
-  .burger-modal {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 450px;
-    height: 609px;
-    background-color: var(--ideal-white-color);
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-    border-radius: var(--border-radius-4);
-    padding: 40px;
-  }
-  .burger-close-btn {
-    position: absolute;
-    top: 8px;
-    right: 8px;
-    width: 30px;
-    height: 30px;
-    background: var(--ideal-white-color);
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    cursor: pointer;
-    border-radius: var(--border-radius-50);
-    fill: var(--ideal-black-color);
-    cursor: pointer;
-  }
-  .burger-close-btn svg {
-    width: 11px;
-    height: 11px;
-  }
-  .burger-open-btn {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-right: 15px;
-    margin-left: auto;
-    fill: var(--current-color);
-    max-width: 16px;
-    height: 12px;
-  }
+.mobile {
+  position: relative;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 40px;
+  background-color: white;
+  transition: var(--transition-cubic-bezier-backdrop-750ms);
 }
 
-@media screen and (min-width: 768px) {
-  .burger-open-btn {
-    display: none;
-  }
+.mobile__nav {
+  font-size: 40px;
+  margin-top: 8px;
+  margin-bottom: 300px;
+}
+
+.mobile__item:not(:last-child) {
+  margin-bottom: 36px;
+}
+
+.mobile__contact {
+  display: flex;
+  flex-direction: column;
+}
+
+.mobile__callto {
+  font-weight: var(--font-weight-500);
+  font-size: var(--font-size-34);
+  line-height: var(--line-height-1_172);
+  letter-spacing: var(--letter-spacing-002em);
+  color: var(--secondary-color);
+  margin-bottom: 32px;
+}
+
+.mobile__mailto {
+  font-weight: var(--font-weight-500);
+  font-size: var(--font-size-24);
+  line-height: var(--line-height-1_172);
+  letter-spacing: var(--letter-spacing-002em);
+  color: var(--main-color);
+  margin-bottom: 64px;
+}
+
+.mobile__socials {
+  display: flex;
+  justify-content: flex-start;
+  font-size: var(--font-size-18);
+  text-decoration: none;
+  color: var(--secondary-color);
+  line-height: var(--line-height-1_222);
+}
+
+.mobile__socials-item:not(:last-child) {
+  padding-right: 10px;
+  border-right: 1px solid black;
+}
+
+.mobile__socials-item:not(:first-child) {
+  padding-left: 10px;
+}
+
+.mobile-close-btn {
+  position: absolute;
+  top: 20px;
+  right: 25px;
+  display: block;
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  background: var(--ideal-white-color);
+  border: none;
+  cursor: pointer;
+  fill: var(--ideal-black-color);
+}
+
+.mobile-close-btn svg {
+  width: 11px;
+  height: 11px;
+}
+
+.mobile-open-btn {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 30px;
+  height: 30px;
+  background: var(--ideal-white-color);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  border-radius: var(--border-radius-50);
+  fill: var(--ideal-black-color);
+  cursor: pointer;
+}
+
+.mobile-open-btn svg {
+  width: 11px;
+  height: 11px;
 }
 /*# sourceMappingURL=main.css.map */

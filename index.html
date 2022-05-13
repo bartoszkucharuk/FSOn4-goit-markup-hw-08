@@ -31,10 +31,7 @@
             <div class="logo"><a class="logo__link link" href="index.html"><span class="logo__accent">Web</span>Studio</a>
             </div>
 
-
-        <svg class="burger-open-btn">
-                                    <use href="./images/sprite.svg#icon-mail" data-modal-open></use>
-                                </svg>
+<button type="button" class="mobile-open-btn" data-mobile-open>mobile</button>
 
 
                                
@@ -64,6 +61,34 @@
 
         </div>
     </header>
+<!-- DOKOŃCZYĆ JAVA SCRIPT ORAZ OKNA MOBILNE -->
+<div class="mobile is-hidden">
+    <button type="button" class="mobile-close-btn">
+        <svg>
+            <use href="./images/sprite.svg#icon-close"></use>
+        </svg>
+    </button>
+
+
+    <ul class="mobile__nav list">
+         <li class="mobile__item"><a class="menu__link link" href="index.html">Agencja</a></li>
+         <li class="mobile__item"><a class="menu__link link" href="portfolio.html">Portfolio</a></li>
+         <li class="mobile__item"><a class="menu__link link" href="#">Kontakt</a></li>
+    </ul>
+
+    <ul class="mobile__contact list">
+        <a class="mobile__callto link" href="callto:+48 111 111 111">+48 111 111 111</a>
+        <a class="mobile__mailto link" href="mailto:info@example.com">info@example.com</a>
+    </ul>
+    
+    <ul class="mobile__socials list">
+        <li class="mobile__socials-item"><a class="mobile__socials-link link" href="#">Instagram</a></li>
+        <li class="mobile__socials-item"><a class="mobile__socials-link link" href="#">Twitter</a></li>
+        <li class="mobile__socials-item"><a class="mobile__socials-link link" href="#">Facebook</a></li>
+        <li class="mobile__socials-item"><a class="mobile__socials-link link" href="#">LinkedIn</a></li>
+    </ul>
+</div>
+
     <main class="section">
         <div class="hero container">
                     <h1 class="hero__header">EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU</h1>
@@ -514,7 +539,7 @@
         </div>
     </div>
     </footer>
-
+<!-- MODAL WINDOW -->
 <div class="backdrop is-hidden" data-modal>
     <div class="modal">
             <button type="button" class="close-btn" data-modal-close>
@@ -570,48 +595,19 @@
     </form>
     </section>
 </div>
-
 <script src="./js/modal.js"></script>
+<!-- END OD MODAL WINDOW -->
 
+MOBILE
+<div class="mobile-backdrop is-hidden">
+    <div class="mobile">
+        <button type="button" class="mobile-close-btn">
+            <svg>
+                <use href="./images/sprite.svg#icon-close"></use>
+            </svg>
+        </button>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    </div>
 
 
 
