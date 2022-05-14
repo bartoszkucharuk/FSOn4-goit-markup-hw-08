@@ -2151,7 +2151,8 @@ img {
     color: rgba(255, 255, 255, 0.6);
     background-color: var(--transparent-color);
     padding-left: 16px;
-    min-width: 450px;
+    min-width: 370px;
+    max-width: 450px;
     height: 50px;
     border: 1px solid rgba(255, 255, 255, 0.3);
     box-sizing: border-box;
