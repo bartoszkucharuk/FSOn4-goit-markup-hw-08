@@ -27,7 +27,7 @@
             <div class="logo"><a class="logo__link link" href="index.html"><span class="logo__accent">Web</span>Studio</a>
             </div>
     
-            <button type="button" class="mobile-open-btn">
+            <button type="button" class="mobile-open-btn" data-menu-open>
                 <img src="./images/SVG/icon-burger.svg" alt="burger menu">
             </button>
     
@@ -54,6 +54,34 @@
     
         </div>
     </header>
+    
+    
+    <div class="mobile is-hidden" data-menu>
+        <button type="button" class="mobile-close-btn" data-menu-close>
+            <svg>
+                <use href="./images/sprite.svg#icon-close"></use>
+            </svg>
+        </button>
+    
+    
+        <ul class="mobile__nav list">
+            <li class="mobile__item"><a class="menu__link link" href="index.html">Agencja</a></li>
+            <li class="mobile__item"><a class="menu__link link" href="portfolio.html">Portfolio</a></li>
+            <li class="mobile__item"><a class="menu__link link" href="#">Kontakt</a></li>
+        </ul>
+    
+        <ul class="mobile__contact list">
+            <a class="mobile__callto link" href="callto:+48 111 111 111">+48 111 111 111</a>
+            <a class="mobile__mailto link" href="mailto:info@example.com">info@example.com</a>
+        </ul>
+    
+        <ul class="mobile__socials list">
+            <li class="mobile__socials-item"><a class="mobile__socials-link link" href="#">Instagram</a></li>
+            <li class="mobile__socials-item"><a class="mobile__socials-link link" href="#">Twitter</a></li>
+            <li class="mobile__socials-item"><a class="mobile__socials-link link" href="#">Facebook</a></li>
+            <li class="mobile__socials-item"><a class="mobile__socials-link link" href="#">LinkedIn</a></li>
+        </ul>
+    </div>
 
 <!-- sekcja MAIN -->
     <main>
@@ -380,6 +408,12 @@
         </div>
     </div>
 </footer>
+
+
+
+<!-- MOBILE -->
+<script src="./js/mobile-menu.js"></script>
+
 </body>
 
 </html>
