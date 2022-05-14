@@ -1,14 +1,12 @@
 .mobile {
-        position: relative;
-        position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            padding: 40px;
-            background-color: white;
-            transition: var(--transition-cubic-bezier-backdrop-750ms);
-            // cursor: not-allowed;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 40px;
+    background-color: white;
+    transition: var(--transition-cubic-bezier-backdrop-750ms);
 }
 
 .mobile__nav {
@@ -17,14 +15,13 @@
     margin-bottom: 300px;
 }
 
-
 .mobile__item:not(:last-child) {
     margin-bottom: 36px;
 }
 
 .mobile__contact {
-display: flex;
-flex-direction: column;
+    display: flex;
+    flex-direction: column;
 }
 
 .mobile__callto {
@@ -48,20 +45,21 @@ flex-direction: column;
     display: flex;
     justify-content: flex-start;
     font-size: var(--font-size-18);
-    text-decoration: none;
-    color: var(--secondary-color);
     line-height: var(--line-height-1_222);
 }
 
 .mobile__socials-item:not(:last-child) {
-padding-right: 10px;
-border-right: 1px solid black;
+    padding-right: 10px;
+    border-right: 1px solid rgba(21, 21, 21, 0.2);
 }
 
 .mobile__socials-item:not(:first-child) {
     padding-left: 10px;
 }
 
+.mobile__socials-link {
+    color: var(--secondary-color);
+}
 
 .mobile-close-btn {
     position: absolute;
@@ -87,9 +85,9 @@ border-right: 1px solid black;
 // DO WYPELNIENIA
 
     .mobile-open-btn {
-        position: absolute;
-        top: 8px;
-        right: 8px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         width: 30px;
         height: 30px;
         background: var(--ideal-white-color);
@@ -97,7 +95,6 @@ border-right: 1px solid black;
         cursor: pointer;
         border-radius: var(--border-radius-50);
         fill: var(--ideal-black-color);
-        cursor: pointer;
     }
 
     .mobile-open-btn svg {

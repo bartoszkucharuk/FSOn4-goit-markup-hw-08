@@ -125,7 +125,9 @@ img {
   .header .container {
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
+    padding-left: 15px;
+    padding-right: 15px;
   }
   .our-team .container {
     background-color: #f5f4fa;
@@ -146,7 +148,9 @@ img {
   .header .container {
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
+    padding-left: 15px;
+    padding-right: 15px;
   }
   .our-team .container {
     background-color: #f5f4fa;
@@ -167,7 +171,9 @@ img {
   .header .container {
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
+    padding-left: 15px;
+    padding-right: 15px;
   }
   .our-team .container {
     background-color: #f5f4fa;
@@ -1384,6 +1390,7 @@ img {
     align-items: center;
     justify-content: center;
     height: 80px;
+    margin: 0px;
   }
   .logo__link {
     font-family: var(--secondary-font);
@@ -2322,7 +2329,6 @@ img {
 }
 
 .mobile {
-  position: relative;
   position: fixed;
   top: 0;
   left: 0;
@@ -2370,18 +2376,20 @@ img {
   display: flex;
   justify-content: flex-start;
   font-size: var(--font-size-18);
-  text-decoration: none;
-  color: var(--secondary-color);
   line-height: var(--line-height-1_222);
 }
 
 .mobile__socials-item:not(:last-child) {
   padding-right: 10px;
-  border-right: 1px solid black;
+  border-right: 1px solid rgba(21, 21, 21, 0.2);
 }
 
 .mobile__socials-item:not(:first-child) {
   padding-left: 10px;
+}
+
+.mobile__socials-link {
+  color: var(--secondary-color);
 }
 
 .mobile-close-btn {
@@ -2404,9 +2412,9 @@ img {
 }
 
 .mobile-open-btn {
-  position: absolute;
-  top: 8px;
-  right: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 30px;
   height: 30px;
   background: var(--ideal-white-color);
@@ -2414,7 +2422,6 @@ img {
   cursor: pointer;
   border-radius: var(--border-radius-50);
   fill: var(--ideal-black-color);
-  cursor: pointer;
 }
 
 .mobile-open-btn svg {
