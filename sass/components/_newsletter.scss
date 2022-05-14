@@ -1,4 +1,4 @@
-@media screen and (min-width: 370px) and (max-width: 767px){
+@media screen and (min-width: 320px) and (max-width: 767px){
   
 .newsletter {
   &__wrapper {
@@ -35,7 +35,7 @@
     color: rgba(255, 255, 255, 0.6);
     background-color: var(--transparent-color);
     padding-left: 16px;
-    width: 450px;
+    min-width: 450px;
     height: 50px;
     border: 1px solid rgba(255, 255, 255, 0.3);
     box-sizing: border-box;
