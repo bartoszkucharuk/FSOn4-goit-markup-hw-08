@@ -45,9 +45,9 @@
     .contact {
 
       &__list {
-        display: flexbox;
-        align-items: center;
-        justify-content: center;}
+        display: block;
+
+      }
         
       &__tel,
       &__mail {
