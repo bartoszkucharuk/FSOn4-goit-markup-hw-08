@@ -20,37 +20,42 @@
     <link rel="stylesheet" href="CSS/main.min.css">
 </head>
 
-
 <body>
-<header class="header section">
-    <div class="container">
-
-        <div class="logo"><a class="logo__link link" href="index.html"><span class="logo__accent">Web</span>Studio</a>
-        </div>
-
-        <div class="nav">
-            <ul class="menu__list list">
-                <li class="menu__item"><a class="menu__link link" href="index.html">Agencja</a></li>
-                <li class="menu__item active"><a class="menu__link link" href="portfolio.html">Portfolio</a></li>
-                <li class="menu__item"><a class="menu__link link" href="#">Kontakt</a></li>
+    <header class="header section">
+        <div class="container">
+    
+            <div class="logo"><a class="logo__link link" href="index.html"><span class="logo__accent">Web</span>Studio</a>
+            </div>
+    
+            <button type="button" class="mobile-open-btn">
+                <img src="./images/SVG/icon-burger.svg" alt="burger menu">
+            </button>
+    
+            <div class="nav">
+                <ul class="menu__list list">
+                    <li class="menu__item active"><a class="menu__link link" href="index.html">Agencja</a></li>
+                    <li class="menu__item"><a class="menu__link link" href="portfolio.html">Portfolio</a></li>
+                    <li class="menu__item"><a class="menu__link link" href="#">Kontakt</a></li>
+                </ul>
+            </div>
+    
+            <ul class="contact__list list">
+                <li class="contact__item">
+                    <a class="contact__mail link" href="mailto:info@example.com"><svg class="contact__mail-icon">
+                            <use href="./images/sprite.svg#icon-mail"></use>
+                        </svg>info@example.com</a>
+                </li>
+                <li class="contact__item list">
+                    <a class="contact__tel link" href="callto:+48 111 111 111"><svg class="contact__tel-icon">
+                            <use href="./images/sprite.svg#icon-smartphone"></use>
+                        </svg>+48 111 111 111</a>
+                </li>
             </ul>
+    
         </div>
+    </header>
 
-
-        <ul class="contact__list list">
-            <li class="contact__item">
-                <a class="contact__mail link" href="mailto:info@example.com"><svg class="contact__mail-icon">
-                        <use href="./images/sprite.svg#icon-mail"></use>
-                    </svg>info@example.com</a>
-            </li>
-            <li class="contact__item list">
-                <a class="contact__tel link" href="callto:+48 111 111 111"><svg class="contact__tel-icon">
-                        <use href="./images/sprite.svg#icon-smartphone"></use>
-                    </svg>+48 111 111 111</a>
-            </li>
-        </ul>
-    </div>
-</header>    <!-- sekcja MAIN -->
+<!-- sekcja MAIN -->
     <main>
         <section class="filter__section section">
             <!-- filter -->

@@ -24,19 +24,13 @@
     <header class="header section">
         <div class="container">
 
-            
-
-
-
             <div class="logo"><a class="logo__link link" href="index.html"><span class="logo__accent">Web</span>Studio</a>
             </div>
 
-                <button type="button" class="mobile-open-btn">
+                <button type="button" class="mobile-open-btn" data-menu-open>
                     <img src="./images/SVG/icon-burger.svg" alt="burger menu">
                 </button>
-
-      
-                      
+                 
             <div class="nav">
                 <ul class="menu__list list">
                     <li class="menu__item active"><a class="menu__link link" href="index.html">Agencja</a></li>
@@ -58,18 +52,12 @@
                     </li>
                 </ul>
 
-            
-
         </div>
     </header>
 
 
-
-
-
-
-<div class="mobile is-hidden">
-    <button type="button" class="mobile-close-btn">
+<div class="mobile is-hidden" data-menu>
+    <button type="button" class="mobile-close-btn" data-menu-close>
         <svg>
             <use href="./images/sprite.svg#icon-close"></use>
         </svg>
@@ -605,7 +593,7 @@
 <!-- END OD MODAL WINDOW -->
 
 <!-- MOBILE -->
-
+<script src="./js/mobile-menu.js"></script>
 
 
 
