@@ -1724,8 +1724,9 @@ img {
     justify-content: center;
   }
   .form__checkbox-text {
-    display: inline-flex;
-    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
     font-weight: var(--font-weight-400);
     font-size: var(--font-size-14);
     line-height: var(--line-height-1_174);
