@@ -1525,7 +1525,7 @@ img {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 450px;
+    max-width: 450px;
     height: 609px;
     background-color: var(--ideal-white-color);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -1668,13 +1668,13 @@ img {
     fill: var(--current-color);
   }
   .form__icon_name {
-    top: 107px;
+    top: 128px;
   }
   .form__icon_tel {
-    top: 174.26px;
+    top: 197px;
   }
   .form__icon_mail {
-    top: 243px;
+    top: 265px;
   }
   .form__input {
     display: border-box;
@@ -2342,7 +2342,7 @@ img {
 .mobile__nav {
   font-size: 40px;
   margin-top: 8px;
-  margin-bottom: 300px;
+  margin-bottom: 200px;
 }
 
 .mobile__item:not(:last-child) {
@@ -2380,12 +2380,12 @@ img {
 }
 
 .mobile__socials-item:not(:last-child) {
-  padding-right: 10px;
+  padding-right: 5px;
   border-right: 1px solid rgba(21, 21, 21, 0.2);
 }
 
 .mobile__socials-item:not(:first-child) {
-  padding-left: 10px;
+  padding-left: 5px;
 }
 
 .mobile__socials-link {
